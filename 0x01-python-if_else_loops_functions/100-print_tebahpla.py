@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 txt = ""
 for alphabet in range(97, 123):
     if(alphabet % 2 != 0):
