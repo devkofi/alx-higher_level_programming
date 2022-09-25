@@ -3,7 +3,7 @@
 
 def print_list_integer(my_list=[]):
     for item in my_list:
-        print(item, end="\n")
+        print(str(item).format(), end="\n")
 
 
 if __name__ == "__main__":
