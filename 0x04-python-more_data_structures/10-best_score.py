@@ -6,6 +6,6 @@ def best_score(a_dictionary):
         for k, v in sorted(a_dictionary.items()):
             if(v > high):
                 score = k
-        return score
+        return k
     else:
         return None
