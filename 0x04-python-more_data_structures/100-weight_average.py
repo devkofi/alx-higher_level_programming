@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-from functools import reduce
 
 
 def weight_average(my_list=[]):
@@ -7,8 +6,8 @@ def weight_average(my_list=[]):
         numerator = 0
         denominator = 0
         for item in my_list:
-            numerator += reduce(lambda x, y: x*y, item)
-            denominator += reduce(lambda x, y: y, item)
+            numerator += item[0] * item[(len(item) - 1)]
+            denominator += item[(len(item) - 1)]
         return (numerator/denominator)
     else:
         return 0
